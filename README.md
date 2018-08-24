@@ -3,7 +3,7 @@ Basys 3 Keyboard Demo
 
 Introduction
 --------------
-This project is a Verilog demo using the Basys 3, USB HID Host port and the USB UART bridge. When programmed onto the board, the user presses a key on the keyboard, this sends a keyboard PS/2 scan code to the Basys3 over the USB-HID port. This scan code is read and transmitted to a terminal application via the USB-UART bridge. When the key is released, a scan code of F0XX is transmitted, indicating that the key with PS/2 code XX has been released. For photos of this demo in operation, check out it’s page on the Digilent Wiki.
+This project is a Verilog demo using the Basys 3, USB HID Host port and the USB UART bridge. When programmed onto the board, the user presses a key on the keyboard, this sends a keyboard PS/2 scan code to the Basys3 over the USB-HID port. This scan code is read and transmitted to a terminal application via the USB-UART bridge. When the key is released, a scan code of F0XX is transmitted, indicating that the key with PS/2 code XX has been released. For photos of this demo in operation, check out it’s page on the [Digilent Wiki](https://reference.digilentinc.com/learn/programmable-logic/tutorials/basys-3-keyboard-demo/start).
 
 Requirements
 --------------
