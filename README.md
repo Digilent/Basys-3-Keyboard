@@ -3,7 +3,9 @@ Basys 3 Keyboard Demo
 
 Description
 --------------
-This project is a Vivado demo using the Basys 3's USB HID Host port and USB UART bridge, written in Verilog. When programmed onto the board, whenever the user presses a key on a keyboard connected to the USB HID port (J2, labeled "USB"), a scan code is sent to the Basys3 through a PS/2 interface. This scan code is read and transmitted to a terminal application via the USB-UART bridge. When the key is released, a scan code of 0xF0XX is transmitted, indicating that the key with PS/2 code "XX" has been released.
+This project is a Vivado demo using the Basys 3's USB HID Host port and USB UART bridge, written in Verilog. When programmed onto the board, whenever the user presses a key on a keyboard connected to the USB HID port (J2, labeled "USB"), a scan code is sent to the Basys3 through a PS/2 interface. This scan code is read and transmitted to a serial terminal emulator application via the USB-UART bridge. When the key is released, a scan code of 0xF0XX is transmitted, indicating that the key with PS/2 code "XX" has been released.
+
+For example: If the user presses the space bar on a keyboard connected to the Basys 3, the scan code "29" will be sent to and printed with the connected serial terminal emulator.  When the space bar is released, "F0 29" will be printed.
 
 Requirements
 --------------
