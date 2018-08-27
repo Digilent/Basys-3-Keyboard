@@ -1,9 +1,9 @@
 Basys 3 Keyboard Demo
 ==============
 
-Introduction
+Description
 --------------
-This project is a Verilog demo using the Basys 3, USB HID Host port and the USB UART bridge. When programmed onto the board, the user presses a key on the keyboard, this sends a keyboard PS/2 scan code to the Basys3 over the USB-HID port. This scan code is read and transmitted to a terminal application via the USB-UART bridge. When the key is released, a scan code of F0XX is transmitted, indicating that the key with PS/2 code XX has been released. For photos of this demo in operation, check out it’s page on the [Digilent Wiki](https://reference.digilentinc.com/learn/programmable-logic/tutorials/basys-3-keyboard-demo/start).
+This project is a Vivado demo using the Basys 3's USB HID Host port and USB UART bridge, written in Verilog. When programmed onto the board, whenever the user presses a key on a keyboard connected to the USB HID port (J2, labeled "USB"), a scan code is sent to the Basys3 through a PS/2 interface. This scan code is read and transmitted to a terminal application via the USB-UART bridge. When the key is released, a scan code of 0xF0XX is transmitted, indicating that the key with PS/2 code "XX" has been released.
 
 Requirements
 --------------
@@ -26,7 +26,11 @@ Demo Setup
 
 Next Steps
 --------------
-This demo can be used as a basis for other projects, either by adding sources included in the demo's release to those projects, or by modifying the sources in the release project. Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start?redirect=1) to find more documentation, demos, and tutorials.
+This demo can be used as a basis for other projects, either by adding sources included in the demo's release to those projects, or by modifying the sources in the release project.
+
+Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start?redirect=1) to find more documentation, demos, and tutorials.
+
+If there are any issues with running this demo, contact Digilent Support through the FPGA section of the [Digilent Forum](https://forum.digilentinc.com).
 
 Additional Notes
 --------------
